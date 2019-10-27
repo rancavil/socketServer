@@ -25,7 +25,7 @@ if __name__ == '__main__':
                 logger.info('You must enter a message!!! Try again')
                 sys.exit(1)
 
-        print(response.decode())
+        logger.info(response.decode())
     except Exception as e:
         logger.info(e)
 

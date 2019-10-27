@@ -12,7 +12,7 @@ def handler(conn,address):
         data = conn.recv(1024)
         logger.debug('{} Message Received <<{}>> from {}'.format(dt.now(),data.decode(),address[0]))
         if len(data)>0:
-            resp = '{} Message Received <<{}>> from {}'.format(dt.now(),data.decode(),address[0])
+            resp = 'Server says {} Message Received <<{}>> from {}'.format(dt.now(),data.decode(),address[0])
             conn.sendall(resp.encode())
             return
 
