@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import socket as sk
 import multiprocessing as mp
 from datetime import datetime as dt
